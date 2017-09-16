@@ -1,0 +1,597 @@
+string for name
+int for number
+char for leter
+
+
+
+_________________________________________________________________
+package helloaap;
+
+public class hello {
+
+public static void main(String[] args) {
+
+    System.out.println("hello from first app");
+
+    
+    System.out.println("\nMr. samer");
+}
+}
+
+
+_________________________________________________________________
+
+
+
+package helloaap;
+
+public class hello {
+
+public static void main(String[] args) {
+
+	
+   int age=24;
+   String name="samer";
+   double pi=3.4; 
+   char type='a';
+   int oldage=23;
+   
+   age=oldage;
+   
+   System.out.println("name:"+ name );
+   System.out.println("age:"+age);
+   
+   
+}
+}
+
+
+_______________________________________________________________________
+
+
+
+
+
+package helloaap;
+
+import java.util.Scanner;
+
+public class hello {
+
+	static Scanner reader = new Scanner(System.in);
+public static void main(String[] args) {
+ String name;
+ int age;
+ System.out.println("enter name:");
+ name=reader.nextLine();
+	
+ System.out.println("enter age:");
+ age=reader.nextInt();
+   
+   System.out.println("your name is: "+ name + ", age is: "+ age );
+   
+   
+}
+}
+
+
+
+_______________________________________________________________________________
+
+
+
+package helloaap;
+
+import java.util.Scanner;
+
+public class hello {
+
+	static Scanner reader = new Scanner(System.in);
+public static void main(String[] args) {
+ 
+	int year;
+	year=reader.nextInt();
+	
+	int age=2017-year;
+	
+	System.out.println("age="+ age);
+	
+}
+}
+
+
+_______________________________________________________________________________________
+
+
+درس رقم4 فديو رقم 6
+
+الأمر في موجه الأوامر "javac hello.java" لعمل Compiler لملف الجافا
+
+public class hello {
+	
+
+public static void main(String[] args) {
+	
+	
+	
+	System.out.println("name1 " + args[0]);
+	System.out.println("name2 " + args[1]);
+
+}
+}
+
+
+___________________________________________________________
+
+
+
+
+
+
+package helloaap;
+
+import java.util.Scanner;
+
+public class hello {
+
+	static Scanner reader = new Scanner(System.in);
+public static void main(String[] args) {
+ 
+	int number;
+	String phone="4376876";
+	number= Integer.parseInt (phone);
+	System.out.println(number);
+	
+}
+}
+
+
+____________________________________________________________________
+
+
+
+package helloaap;
+
+import java.util.Scanner;
+
+public class hello {
+
+	static Scanner reader = new Scanner(System.in);
+public static void main(String[] args) {
+ 
+	double number;
+	String phone="4376876.5";
+	number=Double.parseDouble (phone);
+	System.out.println(number);
+	
+}
+}
+
+______________________________________________________________________
+
+
+
+package helloaap;
+
+import java.util.Scanner;
+
+public class hello {
+
+	static Scanner reader = new Scanner(System.in);
+public static void main(String[] args) {
+ 
+	double number=55.5;
+	String phone;
+	phone=String.valueOf(number);
+	System.out.println(phone + ",9");
+	
+}
+}
+
+_________________________________________________________________________-
+
+
+
+package helloaap;
+
+import java.util.Scanner;
+
+public class hello {
+
+	static Scanner reader = new Scanner(System.in);
+public static void main(String[] args) {
+ 
+	int n1=5;
+	int n2=4;
+	int result=n1+n2;
+	System.out.println(result);
+	
+	
+}
+}
+
+ولعمل حاسبه هناك اختلاف بسيط :
+
+
+System.out.println("n1:");
+	int n1=reader.nextInt();
+	System.out.println("n2:");
+	int n2=reader.nextInt();
+	int result=n1+n2;
+	System.out.println("r="+result);
+	
+	
+_____________________________________________________________________________
+
+
+
+
+
+package helloaap;
+
+import java.util.Scanner;
+
+public class hello {
+
+	static Scanner reader = new Scanner(System.in);
+public static void main(String[] args) {
+	
+	int age;
+	age=reader.nextInt();
+	
+	if ( age>=18) {
+		//code only execute when condition is true
+		System.out.println("Welcome into the collage");
+		
+		
+	}
+	else
+	{
+		//code only execute when condition is not true
+	System.out.println("Welcome into the school");
+	
+	}
+	System.out.println("opp is done");
+}
+}
+
+
+
+____________________________________________________________________________________
+
+
+package helloaap;
+
+import java.util.Scanner;
+
+public class hello {
+
+	static Scanner reader = new Scanner(System.in);
+public static void main(String[] args) {
+	
+for(int i=1;i<100;i=i+2){//repeat
+		
+		System.out.println(i);
+		
+	}
+}
+}
+
+_________________________________________________________________
+لعمل النجوم المتدرجة
+
+
+package helloaap;
+
+import java.util.Scanner;
+
+public class hello {
+
+	static Scanner reader = new Scanner(System.in);
+public static void main(String[] args) {
+	
+  for(int i=0;i<10;i++) 
+   {
+     System.out.println("*");
+     for(int j=0;j<i;j++) {
+    	 System.out.print(" ");
+     }
+   }
+  
+  
+  
+  
+}
+}
+
+_________________________________________________________________
+
+
+
+
+package helloaap;
+
+import java.util.Scanner;
+
+public class hello {
+
+	static Scanner reader = new Scanner(System.in);
+public static void main(String[] args) {
+	
+  int i=3;
+  while((i>=2)&& (i<=10))
+   {
+     System.out.println(i);
+     i++;
+   }
+  
+  
+  
+  
+}
+}
+
+
+________________________________________________________________________
+درس 12 فديو 14
+
+
+package helloaap;
+
+import java.util.Scanner;
+
+public class hello {
+
+	static Scanner reader = new Scanner(System.in);
+public static void main(String[] args) {
+	
+  int i=0;
+ 
+  do {
+	  
+	  System.out.println(i);
+	 
+	  i++;
+ 
+  }while(i<10);
+  
+  
+  
+  
+}
+}
+
+______________________________________________________________________
+
+بدون درس
+****************************************************************
+
+
+package helloaap;
+
+import java.util.Scanner;
+
+public class hello {
+
+	static Scanner reader = new Scanner(System.in);
+public static void main(String[] args) {
+	
+  String name;
+  int age;
+  
+  
+   System.out.println("enter your name:");
+  name=reader.nextLine();
+  System.out.println("enter your age:");
+  age=reader.nextInt();
+  
+  
+  if(age>18) {
+	  System.out.println("hello " +  name + " welcome into the system" );
+  }
+  else 
+   System.out.println("Sorry you are " + age + " years old" );
+  
+  
+  
+  
+  
+}
+}
+
+
+********************************************************************************
+
+
+_____________________________________________________________________________________
+
+
+package helloaap;
+
+import java.util.Scanner;
+
+public class hello {
+
+	// static Scanner reader = new Scanner(System.in);
+public static void main(String[] args) {
+ 
+ 
+	String[] name=new String[4];
+	name[0]="Samer";
+	name[1]="mohammad";
+	name[2]="hashim";
+	name[3]="almulla";
+	
+	for(int i=0;i<4; i++)
+	
+	System.out.println(name[i]);
+	
+	
+	
+	
+}
+}
+
+_______________________________________________________________
+
+
+package helloaap;
+
+import java.util.Scanner;
+
+public class hello {
+
+	// static Scanner reader = new Scanner(System.in);
+public static void main(String[] args) {
+ 
+ 
+	String[] name=new String[4];
+	name[0]="Samer";
+	name[1]="mohammad";
+	name[2]="hashim";
+	name[3]="almulla";
+	
+	for(int i=3;i>=0; i--)
+	
+	System.out.println(name[i]);
+	
+	
+	
+	
+}
+}
+
+_______________________________________________________________________
+
+
+
+package helloaap;
+
+import java.util.Scanner;
+
+public class hello {
+
+	 static Scanner reader = new Scanner(System.in);
+public static void main(String[] args) {
+ 
+ 
+	int[] name=new int[4];
+	for(int i=3;i>=0; i--)
+	name[i]= reader.nextInt();
+	for(int i=3;i>=0; i--)
+	
+	System.out.println(name[i]);
+	
+	
+	
+	
+}
+}
+
+_______________________________________________________________________
+
+
+package helloaap;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class hello {
+
+	 static Scanner reader = new Scanner(System.in);
+public static void main(String[] args) {
+ 
+ ArrayList<String> names=new ArrayList<String>();
+ 
+ names.add("samer");
+ names.add("hashim");
+ names.add("almulla");
+ // to remove by name chose object:
+ //names.remove("samer");
+ 
+//to remove by number chose index:
+ //names.remove(2);
+ 
+ System.out.println(names);
+	
+}
+}
+
+_______________________________________________________________________________________
+
+درس 17 فديو 19
+
+
+package helloaap;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class hello {
+
+	 static Scanner reader = new Scanner(System.in);
+public static void main(String[] args) {
+ 
+ ArrayList<String> Listher=new ArrayList<String>();
+ Listher.add("Here she are");
+ Listher.add("Here is mazen");
+ Listher.add("Android here");
+ 
+ ArrayList<String> Listjava=new ArrayList<String>();
+ Listjava.add("Java and oop");
+ Listjava.add("Java work for android");
+ Listjava.add("Java is very fast");
+ 
+ ArrayList<String> Listios=new ArrayList<String>();
+ Listios.add("Iphon run on ios");
+ Listios.add("New version of ios avilibe");
+ Listios.add("All today news are ios");
+ 
+ HashMap<String,ArrayList<String>> s=new HashMap<String,ArrayList<String>>();
+ 
+ s.put("her",Listher);
+ s.put("java",Listjava);
+ s.put("ios",Listios);
+ 
+ System.out.println(s.get(""));
+}
+}
+
+________________________________________________________________________________________
+درس 18 فديو 20
+
+
+
+package helloaap;
+
+import java.util.Scanner;
+
+public class hello {
+
+	static void DrawLine() {
+		//this code print stars
+		for(int i=0;i<10;i++) 
+		{
+		     System.out.println("*");
+		     for(int j=0;j<i;j++)
+		     
+		    	 System.out.print(" ");}
+        //------------------------
+	}
+	//static Scanner reader = new Scanner(System.in);
+public static void main(String[] args) {
+	
+  
+   DrawLine();
+  
+  
+  
+  
+}
+}
+
+
+________________________________________________________________________________
+
+
