@@ -571,7 +571,7 @@ public class hello {
 
 	static void DrawLine() {
 		//this code print stars
-		for(int i=0;i<10;i++) 
+		for(int i=1;i<5;i++) 
 		{
 		     System.out.println("*");
 		     for(int j=0;j<i;j++)
@@ -582,8 +582,11 @@ public class hello {
 	//static Scanner reader = new Scanner(System.in);
 public static void main(String[] args) {
 	
-  
-   DrawLine();
+ //to repeat STARS CODE just repeat this Line 
+new hello ().	DrawLine();
+ //------------------------------------------
+	
+	
   
   
   
@@ -593,5 +596,232 @@ public static void main(String[] args) {
 
 
 ________________________________________________________________________________
+
+يتبع 
+
+
+
+package helloaap;
+
+import java.util.Scanner;
+
+public class hello {
+
+	static int sum(int n1, int n2) {
+		int r=n1+n2;
+		//you can add HERE more Codes..
+		return(r);
+	}
+	
+	//static Scanner reader = new Scanner(System.in);
+public static void main(String[] args) {
+	
+
+	int result=   sum(3,5)  ;
+	System.out.println(result);
+	
+  
+  
+  
+  
+}
+}
+____________________________________________________________________________
+
+درس 19 ف 21
+
+
+
+package helloaap;
+
+import java.util.Scanner;
+
+public class hello {
+
+	 int sum(int n1, int n2) {
+		
+		return(n1+n2);
+	}
+	 int sum(int n1, int n2,int n3) {
+			
+			return(n1*n2+n3);
+		}
+	
+	
+	//static Scanner reader = new Scanner(System.in);
+public static void main(String[] args) {
+	
+
+	int sum2=new hello(). sum(5,5);
+	int sum3=new hello(). sum(5,5,5);
+	System.out.println(sum2);
+	System.out.println(sum3);
+	
+  
+  
+  
+  
+}
+}
+
+_________________________________________________________________________________
+درس 20 ف 22
+
+package helloaap;
+import java.util.Scanner;
+
+public class hello {
+	
+void display(int n1){
+	
+	System.out.println("integer: " +n1);
+		
+}
+void display(float n1){
+	
+	System.out.println("float: " +n1);
+		
+}
+public static void main(String[] args){
+	
+	new hello().display(4);
+	//new hello().display(4.5f);   <<for float you have to add F
+}
+}
+
+___________________________________________________________________________
+د21 ف 23
+
+
+package helloaap;
+import java.util.Scanner;
+
+public class hello {
+	
+	static final double pi=3.4;
+	
+
+void display(float n1){
+	float n2=n1+1;
+	System.out.println("float: "+ n2*pi);
+	
+		
+}
+    //static Scanner reader = new Scanner(System.in);
+public static void main(String[] args){
+	new hello().display(4);
+	//new hello().display(4.5f);  // <<for float you have to add F
+	System.out.println(pi);
+}
+}
+
+___________________________________________________________________________________
+د 22 ف 24
+
+package helloaap;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class hello{
+	
+	
+	static Scanner reader = new Scanner(System.in);
+	public static void main(String[] args) {
+          
+		try {
+    int n=reader.nextInt();
+	System.out.println(n);
+           }
+		catch(InputMismatchException ex) {    //this for catching (InputMismatchException ex)error
+			System.out.println("*Input should be integer*");}
+			
+		// you can CATCH more errors by adding past block.
+		
+		catch(Exception ex) {                 //and this for catching (All types of errors).
+			System.out.println("*Input should be ...*");}
+		
+	System.out.println("app is done");
+}
+}
+________________________________________________________________________________________________________________________________
+د 23 ف25
+لكتابة ملف وكتابة داخل الملف:
+
+package helloaap;
+
+
+import java.io.FileWriter;
+import java.util.Scanner;
+
+public class hello{
+	
+	
+    static Scanner reader = new Scanner(System.in);
+public static void main(String[] args) {
+          
+		try {
+			FileWriter fout=new FileWriter ("test.txt");
+		    fout.write("Hello my first file my name is samer");
+		    fout.close();
+		   }
+		  
+		
+		catch(Exception ex) {
+			
+		}
+		
+		
+
+
+}
+}
+______________________________________________________________________________
+يتبع 
+
+لقراءة الملف:
+
+package helloaap;
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.util.Scanner;
+
+public class hello{
+	
+	
+    static Scanner reader = new Scanner(System.in);
+public static void main(String[] args) {
+          
+		try {
+			FileReader fout=new FileReader ("test.txt");
+		   int c;
+		   while((c=fout.read())!=-1) {
+			   //to change (c) from int to char:
+			   System.out.print((char) c);
+		   }
+		   fout.close();
+		}
+		catch(Exception ex) {
+			
+		}
+		
+		
+
+
+}
+}
+___________________________________________________________________________________
+
+
+
+
+
+
+
+
+
 
 
